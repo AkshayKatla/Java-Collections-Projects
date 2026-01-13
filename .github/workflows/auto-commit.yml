@@ -20,7 +20,7 @@ jobs:
 
       - name: Update log
         run: |
-          echo "- Automated activity: $(date '+%Y-%m-%d %H:%M:%S')" >> automation-log.md
+          echo "- Automated activity (IST): $(TZ=Asia/Kolkata date '+%Y-%m-%d %H:%M:%S')" >> automation-log.md
 
       - name: Commit and push
         run: |
